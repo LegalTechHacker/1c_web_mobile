@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width<% if (ctx.mode.cordova || ctx.mode.capacitor) { %>, viewport-fit=cover <% } %>">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+  <meta http-equiv="Cache-Control" content="max-age=0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/ico" href="favicon.ico">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#C41F48">
+  <meta name="msapplication-TileColor" content="#C41F48">
+  <meta name="theme-color" content="#C41F48">
+
+  <meta property="og:title" content="<%= productName %>">
+  <meta property="og:description" content="<%= productDescription %>">
+  <meta property="og:image" content="logo.svg">
+  <meta property="og:url" content="/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="title" content="<%= productName %>">
+  <meta name="description" content="<%= productDescription %>">
+  <title>
+    <%= productName %>
+  </title>
+
+  <link href="custom-icons/icons.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="q-app">
+    <main>
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          height: 100vh;
+          width: 100vw;
+          background: rgba(246, 247, 251, 1);
+          color: #C41F48;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        article,
+        h1,
+        p,
+        img {
+          margin: calc(1vw + 1vh);
+        }
+
+        article {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: calc(2vw + 2vh);
+          border-radius: 1rem;
+          opacity: 0.95;
+          background: white;
+          color: inherit;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        img {
+          width: 100%;
+          max-width: 500px;
+          height: auto;
+        }
+      </style>
+      <article>
+        <h1>
+          <%= productName %>
+        </h1>
+        <p>
+          <%= productDescription %>
+        </p>
+        <img src="logo.svg" alt="logo" />
+      </article>
+    </main>
+  </div>
+</body>
+
+</html>
