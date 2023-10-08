@@ -1,0 +1,29 @@
+{
+    "short_name": "\u042e\u0440\u0430\u0439\u044224", 
+    "name": "\u042e\u0440\u0430\u0439\u044224",
+    "description": "Юрайт24: функциональная и легкая CRM-система для юристов, юридических компаний и фирм – никогда работа в отрасли юридических услуг не была такой удобной!",
+    "lang": "ru",
+    "icons": [
+        {
+            "src": "android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "maskable_icon.png",
+            "sizes": "196x196",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "start_url": "../v1/app", 
+    "background_color": "#F6F7FB",
+    "theme_color": "#C41F48",
+    "orientation": "any",
+    "display": "standalone"
+}
